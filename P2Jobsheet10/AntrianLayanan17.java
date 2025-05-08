@@ -105,6 +105,16 @@ public class AntrianLayanan17 {
         }
     }
 
+    public void tampilkanTerakhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("Mahasiswa paling belakang: ");
+            System.out.println("NIM - Nama - Prodi - Kelas");
+            data[rear].tampilkanData();
+        }
+    }
+    
     public int getJumlahAntrian() {
         return size;
     }

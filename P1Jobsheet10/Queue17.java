@@ -57,9 +57,9 @@ public class Queue17 {
         }
     }
 
-    public void Enqueue(int dt) {
+    public boolean Enqueue(int dt) {
         if (isFull()) {
-            System.out.println("Queue sudah penuh");
+            return true;
         } else {
             if (isEmpty()) {
                 front = rear = 0;
@@ -72,15 +72,15 @@ public class Queue17 {
             }
             data[rear] = dt;
             size++;
+            return false;
         }
     }
 
-    public int Dequeue() {
-        int dt = 0;
+    public Integer Dequeue() {
         if (isEmpty()) {
-            System.out.println("Queue masih kosong");
+            return null;
         } else {
-            dt = data[front];
+            int dt = data[front];
             size--;
             if (isEmpty()) {
                 front = rear = -1;
@@ -91,7 +91,7 @@ public class Queue17 {
                     front++;
                 }
             }
+            return dt;
         }
-        return dt;
     }
 }
