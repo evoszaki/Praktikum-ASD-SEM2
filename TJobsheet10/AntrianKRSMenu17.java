@@ -33,7 +33,7 @@ public class AntrianKRSMenu17 {
         System.out.println("8.  Cek Jumlah Yang Belum Diproses");
         System.out.println("9.  Cek Antrian Kosong");
         System.out.println("10. Cek Antrian Penuh");
-        System.out.println("11.. Kosongkan Antrian");
+        System.out.println("11. Kosongkan Antrian");
         System.out.println("0. Keluar");
         System.out.println("===============================");
     }
