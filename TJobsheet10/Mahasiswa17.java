@@ -5,13 +5,13 @@ class Mahasiswa17 {
     String nim;
     String nama;
     String jurusan;
-    String alamat;
+    String prodi;
     
-    public Mahasiswa17(String nim, String nama, String jurusan, String alamat) {
+    public Mahasiswa17(String nim, String nama, String jurusan, String prodi) {
         this.nim = nim;
         this.nama = nama;
         this.jurusan = jurusan;
-        this.alamat = alamat;
+        this.prodi = prodi;
     }
     
     public String getNim() {
@@ -26,8 +26,8 @@ class Mahasiswa17 {
         return jurusan;
     }
     
-    public String getAlamat() {
-        return alamat;
+    public String getProdi() {
+        return prodi;
     }
     
     public void setNim(String nim) {
@@ -42,12 +42,12 @@ class Mahasiswa17 {
         this.jurusan = jurusan;
     }
     
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
     }
     
     public void tampilkanData() {
         System.out.println("NIM: " + nim + "\nNama: " + nama + "\nJurusan: " + jurusan + 
-               "\nAlamat: " + alamat);
+               "\nProdi: " + prodi);
     }
 }
