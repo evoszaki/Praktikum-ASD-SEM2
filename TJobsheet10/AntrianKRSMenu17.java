@@ -5,7 +5,7 @@ public class AntrianKRSMenu17 {
     static AntrianKRS17 antrianKRS;
     
     public static void main(String[] args) {
-        antrianKRS = new AntrianKRS17(10, 30);
+        antrianKRS = new AntrianKRS17(2, 30);
         
         int pilihan;
         do {
@@ -67,16 +67,12 @@ public class AntrianKRSMenu17 {
             case 9:
                 if(antrianKRS.isEmpty()) {
                     System.out.println("Antrian kosong!");
-                } else {
-                    System.out.println("Jumlah mahasiswa yang sudah diproses: " + antrianKRS.getTotalProses());
-                }
+                } 
                 break;
             case 10:
                 if(antrianKRS.isFull()) {
                     System.out.println("Antrian penuh!");
-                } else {
-                    System.out.println("Jumlah mahasiswa yang sudah diproses: " + antrianKRS.getTotalProses());
-                }
+                } 
                 break;
             case 11:
                 antrianKRS.clear();

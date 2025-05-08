@@ -50,4 +50,9 @@ class Mahasiswa17 {
         System.out.println("NIM: " + nim + "\nNama: " + nama + "\nJurusan: " + jurusan + 
                "\nProdi: " + prodi);
     }
+
+    @Override
+    public String toString() {
+        return "NIM: " + nim + "\nNama: " + nama + "\nJurusan: " + jurusan + "\nProdi: " + prodi;
+    }
 }
