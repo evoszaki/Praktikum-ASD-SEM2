@@ -102,10 +102,10 @@ public class AntrianKRSMenu17 {
         String nama = sc.nextLine();
         System.out.print("Jurusan: ");
         String jurusan = sc.nextLine();
-        System.out.print("Alamat: ");
-        String alamat = sc.nextLine();
+        System.out.print("Prodi: ");
+        String prodi = sc.nextLine();
         
-        Mahasiswa17 mhs = new Mahasiswa17(nim, nama, jurusan, alamat);
+        Mahasiswa17 mhs = new Mahasiswa17(nim, nama, jurusan, prodi);
         
         if (antrianKRS.enqueue(mhs)) {
             System.out.println("Mahasiswa berhasil ditambahkan ke antrian!");
