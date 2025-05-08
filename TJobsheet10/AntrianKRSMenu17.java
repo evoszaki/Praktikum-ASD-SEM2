@@ -5,7 +5,7 @@ public class AntrianKRSMenu17 {
     static AntrianKRS17 antrianKRS;
     
     public static void main(String[] args) {
-        antrianKRS = new AntrianKRS17(2, 30);
+        antrianKRS = new AntrianKRS17(10, 30);
         
         int pilihan;
         do {
