@@ -60,10 +60,14 @@ public class DoubleLinkedList17 {
     }
 
     public void print() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong");
+        } else {
         Node17 current = head;
         while (current != null) {
             current.data.Tampil();
             current = current.next;
+            }
         }
     }
 

@@ -7,13 +7,14 @@ public class DLLMain17 {
         Scanner scan = new Scanner(System.in);
         int pilihan;
         do {
-            System.out.println("Menu Double Linked List Mahasiswa");
+            System.out.println("\nMenu Double Linked List Mahasiswa");
             System.out.println("1. Tambah di awal");
             System.out.println("2. Tambah di akhir");
             System.out.println("3. Hapus dari awal");
             System.out.println("4. Hapus dari akhir");
             System.out.println("5. Tampilkan data");
-            System.out.println("6. Cari Mahasiswa berdasarkan NIM");
+            System.out.println("6. Sisipkan data setelah NIM tertentu");
+            System.out.println("7. Cari Mahasiswa berdasarkan NIM");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
@@ -37,7 +38,13 @@ public class DLLMain17 {
                 case 5:
                     list.print();
                     break;
-                // case 6:
+                case 6:
+                    System.out.print("Masukkan NIM yang akan disisipkan setelahnya: ");
+                    String keyNim = scan.nextLine();
+                    Mahasiswa17 mhsInsert = inputMahasiswa(scan);
+                    list.insertAfter(keyNim, mhsInsert);
+                    break;
+                // case 7:
                   //  System.out.print("Masukkan NIM yang dicari: ");
                   //  String nim = scan.nextLine();
                   //  Node17 found = list.search(nim);
