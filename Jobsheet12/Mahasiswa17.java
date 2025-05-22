@@ -1,4 +1,4 @@
-package P1Jobsheet12;
+package Jobsheet12;
 
 public class Mahasiswa17 {
     String nim, nama, kelas;

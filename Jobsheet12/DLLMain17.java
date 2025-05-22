@@ -1,4 +1,4 @@
-package P1Jobsheet12;
+package Jobsheet12;
 import java.util.Scanner;
 
 public class DLLMain17 {
