@@ -1,4 +1,4 @@
-package TPertemuan12;
+package TJobsheet11;
 
 public class Mahasiswa17 {
     String nim;

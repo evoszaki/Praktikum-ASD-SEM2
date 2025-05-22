@@ -1,4 +1,4 @@
-package TPertemuan12;
+package TJobsheet11;
 
 public class QueueAntrian17 {
     Node17 front, rear;
