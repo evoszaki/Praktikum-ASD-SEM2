@@ -15,6 +15,14 @@ public class DLLMain17 {
             System.out.println("5. Tampilkan data");
             System.out.println("6. Sisipkan data setelah NIM tertentu");
             System.out.println("7. Cari Mahasiswa berdasarkan NIM");
+            System.out.println("8. Tambah data pada indeks tertentu");
+            System.out.println("9. Hapus node setelah NIM tertentu");
+            System.out.println("10. Hapus node berdasarkan indeks");
+            System.out.println("11. Tampilkan data pertama");
+            System.out.println("12. Tampilkan data terakhir");
+            System.out.println("13. Tampilkan data pada indeks tertentu");
+            System.out.println("14. Tampilkan jumlah data (size)");
+
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
@@ -44,17 +52,52 @@ public class DLLMain17 {
                     Mahasiswa17 mhsInsert = inputMahasiswa(scan);
                     list.insertAfter(keyNim, mhsInsert);
                     break;
-                // case 7:
-                  //  System.out.print("Masukkan NIM yang dicari: ");
-                  //  String nim = scan.nextLine();
-                  //  Node17 found = list.search(nim);
-                  //  if (found != null) {
-                      //  System.out.println("Data ditemukan:");
-                      //  found.data.Tampil();
-                  //  } else {
-                      //  System.out.println("Data tidak ditemukan.");
-                  //  }
-                  //  break; 
+                case 7:
+                    System.out.print("Masukkan NIM yang dicari: ");
+                    String nim = scan.nextLine();
+                    Node17 found = list.search(nim);
+                    if (found != null) {
+                        System.out.println("Data ditemukan:");
+                        found.data.Tampil();
+                    } else {
+                        System.out.println("Data tidak ditemukan.");
+                    }
+                    break; 
+                case 8:
+                    System.out.print("Masukkan indeks tempat data disisipkan: ");
+                    int indexAdd = scan.nextInt();
+                    scan.nextLine(); 
+                    Mahasiswa17 mhsAdd = inputMahasiswa(scan);
+                    list.add(indexAdd, mhsAdd);
+                    break;
+
+                case 9:
+                    System.out.print("Masukkan NIM sebelum node yang akan dihapus: ");
+                    String keyNimRemove = scan.nextLine();
+                    list.removeAfter(keyNimRemove);
+                    break;
+
+                case 10:
+                    System.out.print("Masukkan indeks node yang akan dihapus: ");
+                    int indexRemove = scan.nextInt();
+                    scan.nextLine();
+                    list.remove(indexRemove);
+                    break;
+                case 11:
+                    list.getFirst();
+                    break;
+                case 12:
+                    list.getLast();
+                    break;
+                case 13:
+                    System.out.print("Masukkan indeks yang ingin ditampilkan: ");
+                    int idx = scan.nextInt();
+                    scan.nextLine();
+                    list.getIndex(idx);
+                    break;
+                case 14:
+                    System.out.println("Jumlah data dalam list: " + list.size());
+                    break;
                 case 0:
                     System.out.println("Keluar dari program.");
                     break;
