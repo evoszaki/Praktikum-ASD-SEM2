@@ -22,7 +22,6 @@ public class DLLMain17 {
             System.out.println("12. Tampilkan data terakhir");
             System.out.println("13. Tampilkan data pada indeks tertentu");
             System.out.println("14. Tampilkan jumlah data (size)");
-
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
